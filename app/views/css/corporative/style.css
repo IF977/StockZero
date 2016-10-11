@@ -1,0 +1,52 @@
+.span-green {
+    color: #4ECDC4 !important;
+}
+
+.span-red {
+    color: #E74C3C !important;
+}
+
+.span-bold {
+    font-weight: 900 !important;
+}
+
+.span-light {
+    font-weight: 100 !important;
+}
+
+
+.logo-image-menu {
+    height: 24px !important;
+}
+
+.logo-image-header {
+      height: 64px !important;
+}
+
+@media(max-width:768px) {
+      .logo-image-header {
+            height: 48px !important;
+      }
+}
+
+.content-black {
+    color: #1d1d1d !important
+}
+
+.link-mail {
+    color: #fff !important;
+}
+
+.sub-header {
+      text-shadow: 1px 1px 1px #1d1d1d;
+}
+
+h2{
+      font-family: 500 !important;
+      font-weight: normal !important;
+}
+
+h1, h3, h4, h5, h6, a, p{
+      line-height: 1.75em !important;
+      letter-spacing: 0.025em !important;
+}
