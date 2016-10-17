@@ -3,7 +3,7 @@ Feature: login user
   In order i login
   I want to go to login page in the system
   
-  Scenario: Welcome
+  Scenario: Login
     Given I am on the login page
-    When I press login button
-    Then I should be on the Login Page 
+    When I press Log in button
+    Then I should be on the root page

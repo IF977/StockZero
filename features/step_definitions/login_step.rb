@@ -2,11 +2,11 @@ Given(/^I am on the login page$/) do
     visit "/login"
  end
  
-When(/^I press login button$/) do
-     click_button("button_user")
+When(/^I press Log in button$/) do
+     click_button("Log in")
  end
  
- Then(/^I should be on the user login page$/) do
-      visit "/user_page"
+ Then(/^I should be on the root page$/) do
+      visit "/"
  end
      
