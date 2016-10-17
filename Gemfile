@@ -23,6 +23,8 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'rails-footnotes', '~> 3.7', '>= 3.7.9'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
