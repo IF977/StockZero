@@ -10,5 +10,16 @@
 
   <body>
     <%= yield %>
+    <div class = 'row'>
+      <div class = 'col-md-2'>
+        <font style = "font-family:'verdana'"><h3> <%= link_to "Home", root_path  %></h3>
+      </div>
+      <div class = 'col-md-2'>
+        <font style = "font-family:'verdana'"><h3> <%= link_to "login", login_login_path  %></h3>
+      </div>
+    </div>
+        
+
+    
   </body>
 </html>
