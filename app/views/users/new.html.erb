@@ -1,17 +1,5 @@
-<div class="login">
-    <div class="container">
-        <div class="form">
-
-            <h1>Sign up</h1>
-            
-            <%= form_for(@user) do |f| %>
-               
-                <%= f.email_field :email, :placeholder => "Email" %>
-                <%= f.password_field :password, :placeholder => "Password" %>
-                <%= f.submit "Create an account", class: "btn-submit" %>
-            <% end %>
-
-
-        </div>
-    </div>
+<%- model_class = User -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
 </div>
+<%= render :partial => 'form' %>

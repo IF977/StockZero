@@ -1,13 +1,10 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
-  helper_method :current_user
-  
-  def current_user
-      @current_user ||= user.find(session[user_id]) if session[user_id]
+  # Prevent CSRF attacks by raising an exception.
+  # For APIs, you may want to use :null_session instead.
+  #protect_from_forgery with: :exception
+  before_action :require_login
+  private
+  def not_authenticated
+    redirect_to login_path, alert: "Por favor faça o login primeiro!"
   end
-  
-  def require_user
-    redirect_to '/login' unless current_user
-  end
-  
 end
