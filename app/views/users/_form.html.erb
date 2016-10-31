@@ -23,18 +23,18 @@
     <%=f.error_span(:email) %>
   </div>
   <div class="form-group">
-    <%= f.label :password, :class => 'control-label col-lg-2' %>
+    <%= f.label :crypted_password, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :password, :class => 'form-control' %>
+      <%= f.text_field :crypted_password, :class => 'form-control' %>
     </div>
-    <%=f.error_span(:password) %>
+    <%=f.error_span(:crypted_password) %>
   </div>
   <div class="form-group">
-    <%= f.label :password_confirmation, :class => 'control-label col-lg-2' %>
+    <%= f.label :salt, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :password_confirmation, :class => 'form-control' %>
+      <%= f.text_field :salt, :class => 'form-control' %>
     </div>
-    <%=f.error_span(:password_confirmation) %>
+    <%=f.error_span(:salt) %>
   </div>
 
   <div class="form-group">
