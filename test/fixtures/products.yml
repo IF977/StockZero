@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome_produto: MyString
+  preco: MyString
+  imagem_produto: 
+  qtd_produtos: 1
+  tempo_entrega: MyString
+  validade: 2016-10-31
+  min_qtd_entrega: 1
+  descricao_produto: MyString
+  composicao_produto: MyString
+  categoria_produto: MyString
+  user_id: 
+
+two:
+  nome_produto: MyString
+  preco: MyString
+  imagem_produto: 
+  qtd_produtos: 1
+  tempo_entrega: MyString
+  validade: 2016-10-31
+  min_qtd_entrega: 1
+  descricao_produto: MyString
+  composicao_produto: MyString
+  categoria_produto: MyString
+  user_id: 

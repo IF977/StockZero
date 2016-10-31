@@ -1,0 +1,38 @@
+<%- model_class = Product -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:nome_produto) %>:</strong></dt>
+  <dd><%= @product.nome_produto %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:preco) %>:</strong></dt>
+  <dd><%= @product.preco %></dd>
+  
+  <dt><strong><%= model_class.human_attribute_name(:qtd_produtos) %>:</strong></dt>
+  <dd><%= @product.qtd_produtos %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:tempo_entrega) %>:</strong></dt>
+  <dd><%= @product.tempo_entrega %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:validade) %>:</strong></dt>
+  <dd><%= @product.validade %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:min_qtd_entrega) %>:</strong></dt>
+  <dd><%= @product.min_qtd_entrega %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:descricao_produto) %>:</strong></dt>
+  <dd><%= @product.descricao_produto %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:composicao_produto) %>:</strong></dt>
+  <dd><%= @product.composicao_produto %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:categoria_produto) %>:</strong></dt>
+  <dd><%= @product.categoria_produto %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:user_id) %>:</strong></dt>
+  <dd><%= @product.user_id %></dd>
+</dl>
+
+<%= link_to t('.back', :default => t("helpers.links.back")),
+              products_path, :class => 'btn btn-default'  %>
+<%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_product_path(@product), :class => 'btn btn-default' %>
+<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              product_path(@product),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>

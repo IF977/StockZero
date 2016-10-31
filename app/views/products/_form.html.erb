@@ -1,0 +1,97 @@
+<%= form_for @product, :html => { :class => "form-horizontal product" } do |f| %>
+
+  <% if @product.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @product.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :nome_produto, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :nome_produto, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:nome_produto) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :preco, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :preco, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:preco) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :qtd_produtos, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :qtd_produtos, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:qtd_produtos) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :tempo_entrega, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :tempo_entrega, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:tempo_entrega) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :validade, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :validade, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:validade) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :min_qtd_entrega, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :min_qtd_entrega, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:min_qtd_entrega) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :descricao_produto, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :descricao_produto, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:descricao_produto) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :composicao_produto, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :composicao_produto, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:composicao_produto) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :categoria_produto, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :categoria_produto, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:categoria_produto) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :user_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :user_id, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:user_id) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                products_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>
