@@ -1,12 +1,12 @@
 
-Given(/^I am on the signup page$/) do
-   visit  "/signup"
+Given(/^I am on the home page$/) do
+   visit  "/"
 end
 
-When(/^I press the button Create an account$/) do
-    click_button("Create an account")
+When(/^I press the button Register$/) do
+    click_on ("Register")
 end
 
-Then(/^I should be my root page$/) do
-    visit  '/'
+Then(/^I must enter the registration page$/) do
+    visit  '/users/new'
 end

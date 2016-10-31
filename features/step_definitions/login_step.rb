@@ -1,12 +1,12 @@
-Given(/^I am on the login page$/) do
-    visit "/login"
+Given(/^I am on the homeh page$/) do
+    visit "/"
  end
  
-When(/^I press Log in button$/) do
-     click_button("Log in")
+When(/^I press Login button$/) do
+     click_on ("Login")
  end
  
- Then(/^I should be on the root page$/) do
-      visit "/"
+ Then(/^I should enter the login page$/) do
+      visit "/login"
  end
      
