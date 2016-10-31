@@ -4,6 +4,6 @@ Feature: Fazer Cadastro User
   I want to go to sign up user page in the system
   
   Scenario: register
-    Given I am on the signup page
-    When I press the button Create an account
-    Then I should be my root page
+    Given I am on the home page
+    When I press the button Register
+    Then I must enter the registration page
