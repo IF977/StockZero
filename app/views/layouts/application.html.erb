@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="application.css">
     <title><%= content_for?(:title) ? yield(:title) : "StockZero" %></title>
     <%= csrf_meta_tags %>
 
@@ -27,7 +28,7 @@
 
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
-    <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
+    <%= favicon_link_tag 'favicon.png', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application" %>
 
@@ -48,6 +49,7 @@
         <a class="navbar-brand" href="#">StockZero</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
+            <img class="logo-image-menu" src="logo-black.png">
             <li><%= link_to "Home", "/users"  %></li>
             <li><%= link_to "Produtos", "/products"  %></li>
             <li><%= link_to "Users", "/path3"  %></li>
