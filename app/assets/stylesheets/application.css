@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ 
+.logo-image-menu {
+    height: 24px !important;
+}
