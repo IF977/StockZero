@@ -41,6 +41,10 @@ group :development, :test do
   gem 'byebug'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :test do 
   gem 'cucumber'
   gem 'cucumber-rails',:require => false
