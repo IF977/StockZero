@@ -1,4 +1,4 @@
-<%= form_for @product, :html => { :class => "form-horizontal product" } do |f| %>
+<%= form_for @product, :html => {multipart: true, :class => "form-horizontal product" } do |f| %>
 
   <% if @product.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
@@ -82,6 +82,13 @@
     <%= f.label :user_id, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
       <%= f.text_field :user_id, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:user_id) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :image, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.file_field :image, :class => 'form-control' %>
     </div>
     <%=f.error_span(:user_id) %>
   </div>
