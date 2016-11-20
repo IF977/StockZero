@@ -11,12 +11,13 @@ class Product < ActiveRecord::Base
   validates_presence_of :descricao_produto, message: ' Não pode ser deixado em branco'
   validates_presence_of :composicao_produto, message: ' Não pode ser deixado em branco'
   validates_presence_of :categoria_produto, message: ' Não pode ser deixado em branco'
-  validates :nome_produto, length: { minimum: 30, message: ' Deve ter pelo menos 30 caracteres' }
-  validates :preco, length: { minimum: 6, message: ' Deve ter pelo menos 6 caracteres' }
-  validates :tempo_entrega, length: { minimum: 10, message: ' Deve ter pelo menos 10 caracteres' }
-  validates :validade, length: { minimum: 10, message: ' Deve ter pelo menos 10 caracteres' }
+  validates :nome_produto, length: {in: 5..30, message: ' Deve ter entre 5 e 30 caracteres'}
+  validates :preco, length: { in: 3..15, message: ' Deve ter entre 3 e 15 caracteres'}
+  validates :tempo_entrega, length: {in: 5..30, message: ' Deve ter entre 5 e 30 caracteres' }
+  validates :validade, length: { minimum: 10, message: ' Deve ter no máximo 10 caracteres' }
   validates :min_qtd_entrega, length: { minimum: 1, message: ' Deve ter pelo menos 1 caracteres'}
-  validates :descricao_produto, length: { minimum: 140, message: ' Deve ter pelo menos 140 caracteres' }
+  validates :qtd_produtos, length: { minimum: 1, message: ' Deve ter pelo menos 1 caracteres'}
+  validates :descricao_produto, length: {in: 5..140, message: ' Deve ter entre 5 e 140 caracteres'}
   
    
   
