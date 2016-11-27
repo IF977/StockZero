@@ -25,6 +25,7 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
     @product = Product.new(product_params)
+    @product.user_id = current_user.id 
 
     respond_to do |format|
       if @product.save
@@ -40,6 +41,7 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+    @product.user_id = current_user.id 
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Prodoto atualizado com sucesso!' }
@@ -54,6 +56,7 @@ class ProductsController < ApplicationController
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
+    @product.user_id = current_user.id 
     @product.destroy
     respond_to do |format|
       format.html { redirect_to products_url, notice: 'Produto deletado com sucesso!' }

@@ -14,6 +14,25 @@
  *= require_self
  */
  
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 60px; /* altura do seu footer */
+}
 .logo-image-menu {
     height: 24px !important;
+}
+
+.navbar-default {
+    background-color: #4ecdc4 !important;
+    border-color: #e7e7e7 !important;
+}
+footer {
+    position: fixed; 
+    bottom: 0px; 
+    width: 100%; 
+    height: 30px; 
+    background-color: #4ecdc4;
 }
