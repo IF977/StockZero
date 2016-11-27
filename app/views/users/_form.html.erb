@@ -36,6 +36,24 @@
     </div>
     <%=f.error_span(:password_confirmation) %>
   </div>
+  
+  <div class="form-group">
+    <%= f.label 'Tipo de Usuario:', :class => 'control-label col-lg-2' %>
+    <div class="col-lg-6">
+      <%= f.label 'Fornecedor', :class => 'control-label col-lg-2' %>
+      <%= f.radio_button :tipo_user, "fornecedor", :class => 'form-control' %>
+      </div>
+    <div class="col-lg-6">
+      <%= f.label 'Cliente', :class => 'control-label col-lg-2' %>
+      <%= f.radio_button :tipo_user, "cliente", :class => 'form-control' %>
+    </div>
+     <div class="col-lg-6">
+       <%= f.label 'Admin', :class => 'control-label col-lg-2' %>
+      <%= f.radio_button :tipo_user, "admin", :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:tipo_user) %>
+  </div>
+  
 
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
