@@ -224,7 +224,9 @@ O QUE PRECISA MELHORAR
 O QUE ESTÁ PLANEJADO PARA A PRÓXIMA ITERAÇÃO
 
 
-Aguardando reunião com o cliente par a o levantamento de novos requisitos.
+● Segregação de usuários;
+● Tornar a o user_id chave estrangeira da tabela produtos ; 
+
 
 
 LIÇÕES APRENDIDAS (Post Mortem / Rationale)
