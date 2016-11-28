@@ -1,7 +1,5 @@
 <%= form_for @user, :html => { :class => "form-horizontal user" } do |f| %>
-<head>
-<link rel="stylesheet" type="text/css" href="new_user-form.scss">
-</head>
+
 
   <% if @user.errors.any? %>
     <div id="error_expl" class="panel panel-danger">

@@ -2,10 +2,10 @@ Given(/^the user is on the home$/) do
   visit "/"
 end
 
-When(/^he presses the delete button$/) do
-   click_on( "/users/" + user.id, :delete)
+#When(/^he presses the delete button$/) do
+   #click_on( "/users/" + user.id, :delete)
   #find(button.btn.btn-primary.btn-save).click
-end
+#end
 
 Then(/^it will display and confirm popup$/) do
   page.driver.browser.switch_to.alert.accept 
