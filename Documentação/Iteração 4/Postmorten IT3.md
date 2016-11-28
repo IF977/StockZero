@@ -236,3 +236,47 @@ O QUE ESTÁ PLANEJADO PARA A PRÓXIMA ITERAÇÃO
 LIÇÕES APRENDIDAS (Post Mortem / Rationale)
 
 ●	Evitar deixar para fazer o deploy da aplicação pra ultima hora.
+
+
+Período da iteração :
+15/11/2016 – 28/11/2016
+
+
+O QUE FOI ESPERADO
+
+● Segregação de usuários;
+● Tornar a o user_id chave estrangeira da tabela produtos;
+● BDD e TDD das implementações;
+● Canvas de proposta de valor;
+● Screencast.
+
+
+
+O QUE FOI FEITO
+
+
+● Segregação de usuários;
+● Tornar a o user_id chave estrangeira da tabela produtos;
+● BDD e TDD das implementações;
+● Canvas de proposta de valor;
+● Screencast.
+
+
+O QUE DEU CERTO
+
+●	Tudo que havia sido planejado foi cumprido;
+●	Fizemos os deploys no heroku sempre que novas funcionalidades eram implementadas.
+
+
+O QUE DEU ERRADO
+
+●	Deixamos para fazer as validações do canvas de proposta de valor tardiamente.
+
+O QUE PRECISA MELHORAR
+
+●	Manter a aptidão e engajamento da equipe para a próxima iteração.
+
+LIÇÕES APRENDIDAS (Post Mortem / Rationale)
+
+●	Evitar deixar para fazer o deploy da aplicação pra ultima hora;
+●	Manter validações constantes, afim de agradar os clientes da plataforma.
