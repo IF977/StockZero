@@ -10,7 +10,7 @@
       <th><%= model_class.human_attribute_name(:crypted_password) %></th>
       <th><%= model_class.human_attribute_name(:salt) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%= model_class.human_attribute_name(:tipo_user) %></th>
+      
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -23,9 +23,11 @@
         <td><%= user.salt %></td>
         <td><%=l user.created_at %></td>
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_user_path(user), :class => 'btn btn-default btn-xs' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+          
+              <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_user_path(user), :class => 'btn btn-default btn-xs' %>
+              
+              <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       user_path(user),
                       :method => :delete,
                       :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
