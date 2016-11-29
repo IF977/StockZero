@@ -2,6 +2,9 @@
 
 http://stockzero.herokuapp.com/
 
+##Screencast
+https://www.youtube.com/watch?v=NAf_1lPtLlQ
+
 #StockZero
 
 ###Universidade Federal de Pernambuco - Centro de Informática
