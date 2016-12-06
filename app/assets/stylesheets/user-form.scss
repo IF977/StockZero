@@ -3,21 +3,30 @@ html, body {
 height: 100%;   
 font-family: verdana, arial, helvetica, sans-serif;   
 color: #444;   
--webkit-font-smoothing: antialiased;    background: #f0f0f0;
+-webkit-font-smoothing: antialiased;    background: #fff;
 }
 
 #container {
+    
+float: center;
 position: fixed;
 width: 340px;
-height: 280px;
+height: 300px;
 top: 50%;
 left: 50%;
-margin-top: -140px;
-margin-left: -170px;
-    background: #fff;
+margin-top: -170px;
+margin-left: -160px;
+background: 	#FFFAFA;
 border-radius: 3px;
 border: 1px solid #ccc;
 box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.imagem{
+    margin-top:-150;   
+    width: auto;/* Faz a largura ficar igual a da largura da imagem de exemplo */
+    /* Faz a altura ficar igual a da altura da imagem de exemplo */
+    height: auto;
 }
 
 form {
@@ -49,11 +58,12 @@ input {
 }
 input[type=text],
 input[type=password] {
+    position: center;
     color: #777;
     padding-left: 10px;
     margin: 10px;
     margin-top: 12px;
-    margin-left: 18px;
+    margin-left: 10px;
     width: 290px;
     height: 35px;
     border: 1px solid #c7d0d2;
@@ -70,20 +80,15 @@ input[type=password] {
 }
 
 input[type=submit] {
-    float: center;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #4ecdc4; /*IE fallback*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#48D1CC), to(#4ecdc4));
-    background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #4ecdc4 100%);
-    background-image: linear-gradient(top left 90deg, #acd6ef 0%, #4ecdc4 100%);
-    border-radius: 30px;
-    border: 1px solid #66add6;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
-    cursor: pointer;
+    background-color: #4ecdc4;
+    width: 290px;
+    height: 50px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 1px 1px 0.5px #888888
 }

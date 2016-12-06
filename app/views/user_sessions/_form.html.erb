@@ -58,14 +58,15 @@
 
 
 <%= form_tag user_sessions_path, :method => :post do %>
-<head>
-<link rel="stylesheet" type="text/css" href="user-form.scss">
-</head>
+    <head><%= stylesheet_link_tag "user-form.scss" %></head>
+         
     <div id="container">
+        
         <div align= center>
+            <%=image_tag("/assets/logo-black-size.png", class: "imagem") %>
           <div class="field">
             <%= label_tag :email %><br />
-            <%= text_field_tag :email %>
+            <%= text_field_tag :email%>
           </div>
           <div class="field">
             <%= label_tag :password %><br  />

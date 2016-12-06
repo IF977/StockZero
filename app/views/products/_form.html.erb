@@ -1,5 +1,5 @@
 <%= form_for @product, :html => {multipart: true, :class => "form-horizontal product" } do |f| %>
-
+<link rel="stylesheet" type="text/css" href="products.scss">
   <% if @product.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
