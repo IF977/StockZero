@@ -22,7 +22,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sorcery'
 # gem para upload de imagem
-gem "paperclip", "~> 5.0.0"
+gem "paperclip", "~> 5.2.0"
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
